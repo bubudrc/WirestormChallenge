@@ -23,7 +23,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
-    NSLog(@"IMAGE: %@", self.imageURL);
+    [self setTitle:@"Big Image"];
 
     if(![ServerCalls stringIsEmpty:self.imageURL]){
         self.imageURLLabel.text = self.imageURL;
