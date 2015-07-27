@@ -143,9 +143,6 @@
     
     Post *newPost = [self.posts objectAtIndex:indexPath.row];
     
-    
-    NSLog(@"POST: %@", newPost.name);
-    
     // Configure the cell...
     cell.titleLabel.text = newPost.name;
     cell.positionLabel.text = newPost.position;
@@ -162,6 +159,7 @@
             
         } failure:^(NSString *errorDescription) {
             NSLog(@"ERROR: %@", errorDescription);
+            [ServerCalls showAlertWithMessage:errorDescription withErrorTitle:@"ERROR"];
         }];
     } else {
         cell.activityIndicator.alpha = 0.0;
