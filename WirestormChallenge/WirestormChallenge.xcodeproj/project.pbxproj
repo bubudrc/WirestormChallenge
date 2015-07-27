@@ -16,6 +16,7 @@
 		8DE902581B65AEFE00F0C5A6 /* WirestormChallengeTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8DE902571B65AEFE00F0C5A6 /* WirestormChallengeTests.m */; };
 		8DE902661B65AFA800F0C5A6 /* PostsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8DE902651B65AFA800F0C5A6 /* PostsTableViewController.m */; };
 		8DE902691B65B02E00F0C5A6 /* Post.m in Sources */ = {isa = PBXBuildFile; fileRef = 8DE902681B65B02E00F0C5A6 /* Post.m */; };
+		8DE9026C1B65B36100F0C5A6 /* ServerCalls.m in Sources */ = {isa = PBXBuildFile; fileRef = 8DE9026B1B65B36100F0C5A6 /* ServerCalls.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,6 +47,8 @@
 		8DE902651B65AFA800F0C5A6 /* PostsTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PostsTableViewController.m; path = Controllers/PostsTableViewController.m; sourceTree = "<group>"; };
 		8DE902671B65B02E00F0C5A6 /* Post.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Post.h; path = Models/Post.h; sourceTree = "<group>"; };
 		8DE902681B65B02E00F0C5A6 /* Post.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Post.m; path = Models/Post.m; sourceTree = "<group>"; };
+		8DE9026A1B65B36100F0C5A6 /* ServerCalls.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ServerCalls.h; path = Models/ServerCalls.h; sourceTree = "<group>"; };
+		8DE9026B1B65B36100F0C5A6 /* ServerCalls.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ServerCalls.m; path = Models/ServerCalls.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -129,6 +132,8 @@
 			children = (
 				8DE902671B65B02E00F0C5A6 /* Post.h */,
 				8DE902681B65B02E00F0C5A6 /* Post.m */,
+				8DE9026A1B65B36100F0C5A6 /* ServerCalls.h */,
+				8DE9026B1B65B36100F0C5A6 /* ServerCalls.m */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -255,6 +260,7 @@
 			files = (
 				8DE902691B65B02E00F0C5A6 /* Post.m in Sources */,
 				8DE902441B65AEFD00F0C5A6 /* ViewController.m in Sources */,
+				8DE9026C1B65B36100F0C5A6 /* ServerCalls.m in Sources */,
 				8DE902661B65AFA800F0C5A6 /* PostsTableViewController.m in Sources */,
 				8DE902411B65AEFD00F0C5A6 /* AppDelegate.m in Sources */,
 				8DE9023E1B65AEFD00F0C5A6 /* main.m in Sources */,
