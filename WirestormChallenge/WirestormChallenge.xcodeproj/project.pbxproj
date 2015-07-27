@@ -15,6 +15,7 @@
 		8DE9024C1B65AEFD00F0C5A6 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8DE9024A1B65AEFD00F0C5A6 /* LaunchScreen.xib */; };
 		8DE902581B65AEFE00F0C5A6 /* WirestormChallengeTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8DE902571B65AEFE00F0C5A6 /* WirestormChallengeTests.m */; };
 		8DE902661B65AFA800F0C5A6 /* PostsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8DE902651B65AFA800F0C5A6 /* PostsTableViewController.m */; };
+		8DE902691B65B02E00F0C5A6 /* Post.m in Sources */ = {isa = PBXBuildFile; fileRef = 8DE902681B65B02E00F0C5A6 /* Post.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,6 +44,8 @@
 		8DE902571B65AEFE00F0C5A6 /* WirestormChallengeTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WirestormChallengeTests.m; sourceTree = "<group>"; };
 		8DE902641B65AFA800F0C5A6 /* PostsTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PostsTableViewController.h; path = Controllers/PostsTableViewController.h; sourceTree = "<group>"; };
 		8DE902651B65AFA800F0C5A6 /* PostsTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PostsTableViewController.m; path = Controllers/PostsTableViewController.m; sourceTree = "<group>"; };
+		8DE902671B65B02E00F0C5A6 /* Post.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Post.h; path = Models/Post.h; sourceTree = "<group>"; };
+		8DE902681B65B02E00F0C5A6 /* Post.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Post.m; path = Models/Post.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -124,6 +127,8 @@
 		8DE902611B65AF2F00F0C5A6 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				8DE902671B65B02E00F0C5A6 /* Post.h */,
+				8DE902681B65B02E00F0C5A6 /* Post.m */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -248,6 +253,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8DE902691B65B02E00F0C5A6 /* Post.m in Sources */,
 				8DE902441B65AEFD00F0C5A6 /* ViewController.m in Sources */,
 				8DE902661B65AFA800F0C5A6 /* PostsTableViewController.m in Sources */,
 				8DE902411B65AEFD00F0C5A6 /* AppDelegate.m in Sources */,
