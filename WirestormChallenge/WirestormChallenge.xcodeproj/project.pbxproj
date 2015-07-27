@@ -17,6 +17,7 @@
 		8DE902661B65AFA800F0C5A6 /* PostsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8DE902651B65AFA800F0C5A6 /* PostsTableViewController.m */; };
 		8DE902691B65B02E00F0C5A6 /* Post.m in Sources */ = {isa = PBXBuildFile; fileRef = 8DE902681B65B02E00F0C5A6 /* Post.m */; };
 		8DE9026C1B65B36100F0C5A6 /* ServerCalls.m in Sources */ = {isa = PBXBuildFile; fileRef = 8DE9026B1B65B36100F0C5A6 /* ServerCalls.m */; };
+		8DE9026F1B65B58F00F0C5A6 /* PostTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8DE9026E1B65B58F00F0C5A6 /* PostTableViewCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,8 @@
 		8DE902681B65B02E00F0C5A6 /* Post.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Post.m; path = Models/Post.m; sourceTree = "<group>"; };
 		8DE9026A1B65B36100F0C5A6 /* ServerCalls.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ServerCalls.h; path = Models/ServerCalls.h; sourceTree = "<group>"; };
 		8DE9026B1B65B36100F0C5A6 /* ServerCalls.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ServerCalls.m; path = Models/ServerCalls.m; sourceTree = "<group>"; };
+		8DE9026D1B65B58F00F0C5A6 /* PostTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PostTableViewCell.h; path = Models/PostTableViewCell.h; sourceTree = "<group>"; };
+		8DE9026E1B65B58F00F0C5A6 /* PostTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PostTableViewCell.m; path = Models/PostTableViewCell.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -134,6 +137,8 @@
 				8DE902681B65B02E00F0C5A6 /* Post.m */,
 				8DE9026A1B65B36100F0C5A6 /* ServerCalls.h */,
 				8DE9026B1B65B36100F0C5A6 /* ServerCalls.m */,
+				8DE9026D1B65B58F00F0C5A6 /* PostTableViewCell.h */,
+				8DE9026E1B65B58F00F0C5A6 /* PostTableViewCell.m */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -261,6 +266,7 @@
 				8DE902691B65B02E00F0C5A6 /* Post.m in Sources */,
 				8DE902441B65AEFD00F0C5A6 /* ViewController.m in Sources */,
 				8DE9026C1B65B36100F0C5A6 /* ServerCalls.m in Sources */,
+				8DE9026F1B65B58F00F0C5A6 /* PostTableViewCell.m in Sources */,
 				8DE902661B65AFA800F0C5A6 /* PostsTableViewController.m in Sources */,
 				8DE902411B65AEFD00F0C5A6 /* AppDelegate.m in Sources */,
 				8DE9023E1B65AEFD00F0C5A6 /* main.m in Sources */,
