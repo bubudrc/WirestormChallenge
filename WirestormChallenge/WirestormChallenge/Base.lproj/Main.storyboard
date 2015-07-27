@@ -13,10 +13,52 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="iob-P8-8rR">
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="120" id="iob-P8-8rR">
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="iob-P8-8rR" id="aUB-fD-SHH">
                                     <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="V1E-it-ddY">
+                                            <rect key="frame" x="45" y="45" width="20" height="20"/>
+                                        </activityIndicatorView>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="3v1-Ms-DHL">
+                                            <rect key="frame" x="10" y="10" width="90" height="90"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="90" id="8UD-yL-Ux5"/>
+                                                <constraint firstAttribute="width" constant="90" id="u86-FO-l6V"/>
+                                            </constraints>
+                                        </imageView>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Kq4-f7-FsC">
+                                            <rect key="frame" x="108" y="10" width="484" height="21"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="21" id="IuT-0v-eSs"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
+                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Position" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FVe-rN-Vws">
+                                            <rect key="frame" x="108" y="39" width="484" height="61"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="61" id="AbT-qv-aJT"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                            <color key="textColor" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="FVe-rN-Vws" firstAttribute="top" secondItem="Kq4-f7-FsC" secondAttribute="bottom" constant="8" id="4Zg-LE-VOV"/>
+                                        <constraint firstItem="V1E-it-ddY" firstAttribute="centerY" secondItem="3v1-Ms-DHL" secondAttribute="centerY" id="78W-KT-Fdg"/>
+                                        <constraint firstItem="3v1-Ms-DHL" firstAttribute="leading" secondItem="aUB-fD-SHH" secondAttribute="leading" constant="10" id="Mzs-qv-vtA"/>
+                                        <constraint firstItem="FVe-rN-Vws" firstAttribute="leading" secondItem="3v1-Ms-DHL" secondAttribute="trailing" constant="8" id="VQW-Wi-Olq"/>
+                                        <constraint firstItem="3v1-Ms-DHL" firstAttribute="top" secondItem="aUB-fD-SHH" secondAttribute="top" constant="10" id="dWO-In-HNR"/>
+                                        <constraint firstItem="Kq4-f7-FsC" firstAttribute="top" secondItem="aUB-fD-SHH" secondAttribute="top" constant="10" id="gWP-UJ-5B2"/>
+                                        <constraint firstItem="V1E-it-ddY" firstAttribute="centerX" secondItem="3v1-Ms-DHL" secondAttribute="centerX" id="mOd-A8-YM0"/>
+                                        <constraint firstAttribute="trailing" secondItem="Kq4-f7-FsC" secondAttribute="trailing" constant="8" id="ojj-JZ-050"/>
+                                        <constraint firstItem="Kq4-f7-FsC" firstAttribute="leading" secondItem="3v1-Ms-DHL" secondAttribute="trailing" constant="8" id="q0Z-rq-B8H"/>
+                                        <constraint firstAttribute="trailing" secondItem="FVe-rN-Vws" secondAttribute="trailing" constant="8" id="zLN-IF-2uL"/>
+                                    </constraints>
                                 </tableViewCellContentView>
                             </tableViewCell>
                         </prototypes>
