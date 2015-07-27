@@ -19,4 +19,6 @@
 +(void) showAlertWithMessage:(NSString *) message
               withErrorTitle:(BOOL) error;
 
++ (BOOL ) stringIsEmpty:(NSString *) aString;
+
 @end

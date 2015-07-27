@@ -7,21 +7,46 @@
 //
 
 #import "ViewController.h"
+#import "ServerCalls.h"
 
 @interface ViewController ()
+
+@property (weak, nonatomic) IBOutlet UILabel *imageURLLabel;
+@property (weak, nonatomic) IBOutlet UIImageView *postImage;
+@property (weak, nonatomic) IBOutlet UIActivityIndicatorView *activityIndicator;
+@property (weak, nonatomic) IBOutlet UIBarButtonItem *saveImageButton;
+
 
 @end
 
 @implementation ViewController
 
+#pragma mark - UIViewController
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
+    
+    if([ServerCalls stringIsEmpty:self.imageURL]){
+        self.imageURLLabel.text = self.imageURL;
+        [ServerCalls downloadDataFromURL:self.imageURL ifImage:YES success:^(NSArray *data) {
+            // Check if any data returned.
+            if (data != nil) {
+                self.postImage.image = [UIImage imageWithData:data.firstObject];
+                self.activityIndicator.alpha = 0.0;
+                
+                if(self.postImage != nil){
+                    self.saveImageButton.enabled = YES;
+                }
+            }
+        } failure:^(NSString *errorDescription) {
+            NSLog(@"ERROR: %@", errorDescription);
+        }];
+
+    } else {
+        [ServerCalls showAlertWithMessage:@"No Image Data" withErrorTitle:@"ERROR"];
+    }
+    
 }
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
-}
 
 @end
