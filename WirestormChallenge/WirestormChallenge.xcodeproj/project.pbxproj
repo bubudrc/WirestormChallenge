@@ -14,6 +14,7 @@
 		8DE902491B65AEFD00F0C5A6 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8DE902481B65AEFD00F0C5A6 /* Images.xcassets */; };
 		8DE9024C1B65AEFD00F0C5A6 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8DE9024A1B65AEFD00F0C5A6 /* LaunchScreen.xib */; };
 		8DE902581B65AEFE00F0C5A6 /* WirestormChallengeTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8DE902571B65AEFE00F0C5A6 /* WirestormChallengeTests.m */; };
+		8DE902661B65AFA800F0C5A6 /* PostsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8DE902651B65AFA800F0C5A6 /* PostsTableViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +41,8 @@
 		8DE902511B65AEFE00F0C5A6 /* WirestormChallengeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WirestormChallengeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8DE902561B65AEFE00F0C5A6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8DE902571B65AEFE00F0C5A6 /* WirestormChallengeTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WirestormChallengeTests.m; sourceTree = "<group>"; };
+		8DE902641B65AFA800F0C5A6 /* PostsTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PostsTableViewController.h; path = Controllers/PostsTableViewController.h; sourceTree = "<group>"; };
+		8DE902651B65AFA800F0C5A6 /* PostsTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PostsTableViewController.m; path = Controllers/PostsTableViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,13 +84,10 @@
 		8DE9023A1B65AEFD00F0C5A6 /* WirestormChallenge */ = {
 			isa = PBXGroup;
 			children = (
-				8DE9023F1B65AEFD00F0C5A6 /* AppDelegate.h */,
-				8DE902401B65AEFD00F0C5A6 /* AppDelegate.m */,
-				8DE902421B65AEFD00F0C5A6 /* ViewController.h */,
-				8DE902431B65AEFD00F0C5A6 /* ViewController.m */,
-				8DE902451B65AEFD00F0C5A6 /* Main.storyboard */,
+				8DE902631B65AF3900F0C5A6 /* Controllers */,
+				8DE902621B65AF3500F0C5A6 /* View */,
+				8DE902611B65AF2F00F0C5A6 /* Models */,
 				8DE902481B65AEFD00F0C5A6 /* Images.xcassets */,
-				8DE9024A1B65AEFD00F0C5A6 /* LaunchScreen.xib */,
 				8DE9023B1B65AEFD00F0C5A6 /* Supporting Files */,
 			);
 			path = WirestormChallenge;
@@ -96,6 +96,8 @@
 		8DE9023B1B65AEFD00F0C5A6 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				8DE9023F1B65AEFD00F0C5A6 /* AppDelegate.h */,
+				8DE902401B65AEFD00F0C5A6 /* AppDelegate.m */,
 				8DE9023C1B65AEFD00F0C5A6 /* Info.plist */,
 				8DE9023D1B65AEFD00F0C5A6 /* main.m */,
 			);
@@ -117,6 +119,33 @@
 				8DE902561B65AEFE00F0C5A6 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		8DE902611B65AF2F00F0C5A6 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		8DE902621B65AF3500F0C5A6 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				8DE902451B65AEFD00F0C5A6 /* Main.storyboard */,
+				8DE9024A1B65AEFD00F0C5A6 /* LaunchScreen.xib */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		8DE902631B65AF3900F0C5A6 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				8DE902641B65AFA800F0C5A6 /* PostsTableViewController.h */,
+				8DE902651B65AFA800F0C5A6 /* PostsTableViewController.m */,
+				8DE902421B65AEFD00F0C5A6 /* ViewController.h */,
+				8DE902431B65AEFD00F0C5A6 /* ViewController.m */,
+			);
+			name = Controllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -220,6 +249,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8DE902441B65AEFD00F0C5A6 /* ViewController.m in Sources */,
+				8DE902661B65AFA800F0C5A6 /* PostsTableViewController.m in Sources */,
 				8DE902411B65AEFD00F0C5A6 /* AppDelegate.m in Sources */,
 				8DE9023E1B65AEFD00F0C5A6 /* main.m in Sources */,
 			);
