@@ -93,8 +93,42 @@
                     <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ImageURL" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ijg-UC-xOR">
+                                <rect key="frame" x="16" y="72" width="568" height="72"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="72" id="noX-wU-ji4"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="xZx-tq-wQp">
+                                <rect key="frame" x="282" y="357" width="37" height="37"/>
+                                <color key="color" red="0.43529411759999997" green="0.4431372549" blue="0.47450980390000003" alpha="1" colorSpace="calibratedRGB"/>
+                            </activityIndicatorView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="uQR-7a-qK9">
+                                <rect key="frame" x="0.0" y="152" width="600" height="448"/>
+                            </imageView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="uQR-7a-qK9" secondAttribute="trailing" id="FXZ-78-rZE"/>
+                            <constraint firstItem="uQR-7a-qK9" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" id="HN7-4M-A86"/>
+                            <constraint firstItem="xZx-tq-wQp" firstAttribute="centerX" secondItem="uQR-7a-qK9" secondAttribute="centerX" constant="0.5" id="PWs-W8-SL1"/>
+                            <constraint firstAttribute="trailing" secondItem="ijg-UC-xOR" secondAttribute="trailing" constant="16" id="S4R-ax-4hq"/>
+                            <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="uQR-7a-qK9" secondAttribute="bottom" id="Wj7-2B-1Oa"/>
+                            <constraint firstItem="ijg-UC-xOR" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="8" id="caX-IC-IqB"/>
+                            <constraint firstItem="ijg-UC-xOR" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" constant="16" id="dpJ-kS-gcu"/>
+                            <constraint firstItem="uQR-7a-qK9" firstAttribute="top" secondItem="ijg-UC-xOR" secondAttribute="bottom" constant="8" id="wGE-dx-aD0"/>
+                            <constraint firstItem="xZx-tq-wQp" firstAttribute="centerY" secondItem="uQR-7a-qK9" secondAttribute="centerY" constant="-0.5" id="woT-7q-apK"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="activityIndicator" destination="xZx-tq-wQp" id="QSr-t9-HN7"/>
+                        <outlet property="imageURLLabel" destination="ijg-UC-xOR" id="1UZ-mf-bIx"/>
+                        <outlet property="postImage" destination="uQR-7a-qK9" id="Yvw-z6-YlR"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>

@@ -14,8 +14,6 @@
 @property (weak, nonatomic) IBOutlet UILabel *imageURLLabel;
 @property (weak, nonatomic) IBOutlet UIImageView *postImage;
 @property (weak, nonatomic) IBOutlet UIActivityIndicatorView *activityIndicator;
-@property (weak, nonatomic) IBOutlet UIBarButtonItem *saveImageButton;
-
 
 @end
 
@@ -33,10 +31,6 @@
             if (data != nil) {
                 self.postImage.image = [UIImage imageWithData:data.firstObject];
                 self.activityIndicator.alpha = 0.0;
-                
-                if(self.postImage != nil){
-                    self.saveImageButton.enabled = YES;
-                }
             }
         } failure:^(NSString *errorDescription) {
             NSLog(@"ERROR: %@", errorDescription);
